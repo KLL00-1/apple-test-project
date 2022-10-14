@@ -8,9 +8,6 @@
   .contacts-inner {
     flex-direction: column;
   }
-  .menu {
-    flex-direction: column;
-  }
 }
 @media (max-width: 940px) {
   .block_2 {
@@ -21,8 +18,59 @@
     margin: 0;
     text-align: center;
   }
+}
+@media (max-width: 790px) {
+  .menu-btn {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    display: block;
+    order: 1;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+  }
+  .btn-line:nth-child(1) {
+    top: 0;
+  }
+  .btn-line:nth-child(2) {
+    top: 20px;
+  }
+  .btn-line:nth-child(3) {
+    top: 20px;
+  }
+  .btn-line:nth-child(4) {
+    top: 40px;
+  }
+  .menu-open .btn-line:nth-child(1) {
+    transform: scale(0);
+  }
+  .menu-open .btn-line:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .menu-open .btn-line:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .menu-open .btn-line:nth-child(4) {
+    transform: scale(0);
+  }
+  .links {
+    display: none;
+  }
   .logo {
-    margin: 20px auto;
+    margin-left: 10px;
+  }
+  .phone {
+    text-align: center;
+  }
+  .btn-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    transition: 1s;
   }
 }
 @media (max-width: 600px) {
@@ -64,10 +112,11 @@
   .contacts-form button {
     padding: 7px 55px;
   }
-  .menu {
-    font-size: 18px;
-  }
+
   .item {
     padding-right: 15px;
+  }
+  .phone {
+    font-size: 14px;
   }
 }
