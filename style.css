@@ -88,6 +88,9 @@ body {
   font-size: 24px;
   line-height: 29px;
 }
+.menu-btn {
+  display: none;
+}
 .links {
   display: flex;
   flex-grow: 1;
@@ -112,6 +115,30 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+}
+.list {
+  display: none;
+}
+.home-menu {
+  display: block;
+  position: absolute;
+  width: 200px;
+  min-height: 300px;
+  background-color: #ede9f1;
+  line-height: 60px;
+  border-radius: 10px;
+  right: 0px;
+}
+.list-menu {
+  margin-top: 30px;
+  width: 100%;
+}
+.item1 {
+  text-decoration: none;
+  color: #717171;
+  font-size: 20px;
+  border-bottom: 1px solid #717171;
 }
 .img {
   margin-top: 71px;
